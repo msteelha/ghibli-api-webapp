@@ -1,0 +1,20 @@
+.movie_visual {
+    max-height: 100px;
+    max-width: 300px;
+    border-radius: 25px;
+    background-color: #25b7fa;
+    padding: 5px;
+}
+
+.movie_title_jap {
+    margin-top: 1rem;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.movie_title_rom {
+    margin: .5rem 1rem 1rem 1rem;
+    display: block;
+    font-size: 14px;
+}
