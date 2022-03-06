@@ -2,7 +2,7 @@ import React from "react";
 import { ICardProps } from "../types/types";
 import "./Card.css";
 
-const ButtonCard = ({ cardDetails, handleClick }: { cardDetails: ICardProps, handleClick: (e:React.MouseEvent)=>void }) => {
+const ClickableCard = ({ cardDetails, handleClick }: { cardDetails: ICardProps, handleClick: (e:React.MouseEvent)=>void }) => {
     const {id, pictureElement,title,content} = cardDetails;
 
     return (
@@ -16,4 +16,4 @@ const ButtonCard = ({ cardDetails, handleClick }: { cardDetails: ICardProps, han
     );
 };
 
-export default ButtonCard;
+export default ClickableCard;
