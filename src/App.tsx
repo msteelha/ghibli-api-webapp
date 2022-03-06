@@ -1,16 +1,16 @@
 import logo from './kindpng_834491.png';
 import './App.css';
-import MovieCardList from './components/MovieCardList';
+import AppBody from './components/AppBody';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <p>
           Displaying data from the <a
-          className="App-link"
+          className="app-link"
           href="https://ghibliapi.herokuapp.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,9 +18,8 @@ function App() {
           Studio Ghibli API.
         </a>
         </p>
-        
-        <MovieCardList />
       </header>
+      <AppBody />
     </div>
   );
 }

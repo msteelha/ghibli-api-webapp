@@ -1,12 +1,12 @@
 import { ICardProps } from "../types/types";
 import "./Card.css";
 
-const Card = (props: {cardDetails: ICardProps}) => {
-    const {pictureElement,title,content} = props.cardDetails;
+const Card = ({ cardDetails }: { cardDetails: ICardProps }) => {
+    const {pictureElement,title,content, id} = cardDetails;
     return (
-        <div className="card">
+        <div id={id} className="card">
             {pictureElement}
-            <div className="cardinfo">
+            <div className="card-info">
                 <div className="title">{title}</div>
                 <div className="content">{content}</div>
             </div>
