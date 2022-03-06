@@ -1,10 +1,12 @@
+import React from "react";
 import { ICardProps } from "../types/types";
 import "./Card.css";
 
-const Card = ({ cardDetails }: { cardDetails: ICardProps }) => {
-    const {pictureElement,title,content, id} = cardDetails;
+const ButtonCard = ({ cardDetails, handleClick }: { cardDetails: ICardProps, handleClick: (e:React.MouseEvent)=>void }) => {
+    const {id, pictureElement,title,content} = cardDetails;
+
     return (
-        <div id={id} className="card">
+        <div id={id} className="card" onClick={handleClick} >
             {pictureElement}
             <div className="card-info">
                 <div className="title">{title}</div>
@@ -14,4 +16,4 @@ const Card = ({ cardDetails }: { cardDetails: ICardProps }) => {
     );
 };
 
-export default Card;
+export default ButtonCard;

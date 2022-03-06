@@ -1,12 +1,14 @@
+import React from "react";
 import { ICardProps } from "../types/types";
-import Card from "./Card";
+import ButtonCard from "./ButtonCard";
 
-const CardList = (props: {cards: ICardProps[], title: string}) => {
+const CardList = ({ cards, title,handleClick }: { cards: ICardProps[], title: string, handleClick: (e:React.MouseEvent)=>void }) => {
+    
     return (
         <>
-            <h1>{props.title}</h1>
-            <div className="cardlist">
-                {props.cards.map((c: ICardProps) => <Card key={c.id} cardDetails={c} />)}
+            <h1>{title}</h1>
+            <div className="card-list">
+                {cards.map(c => <ButtonCard key={c.id} cardDetails={c} handleClick={handleClick} />)}
             </div>
         </>
     );

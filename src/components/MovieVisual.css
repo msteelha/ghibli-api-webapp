@@ -1,4 +1,4 @@
-.movie_visual {
+.movie-visual {
     max-height: 100px;
     max-width: 300px;
     border-radius: 25px;
@@ -6,14 +6,14 @@
     padding: 5px;
 }
 
-.movie_title_jap {
+.movie-title-jap {
     margin-top: 1rem;
     display: block;
     font-size: 20px;
     font-weight: bold;
 }
 
-.movie_title_rom {
+.movie-title-rom {
     margin: .5rem 1rem 1rem 1rem;
     display: block;
     font-size: 14px;
