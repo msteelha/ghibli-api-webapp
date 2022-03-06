@@ -4,11 +4,11 @@
 
 .app-logo {
   height: 300px;
-  width: 500px;
+  width: 600px;
   pointer-events: none;
 }
 
-.app-header, .App-body {
+.app-header, .app-body {
   background-color: #282c34;
   min-height: 50vh;
   display: flex;
